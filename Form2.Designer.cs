@@ -171,7 +171,7 @@
             comboBox_TipoPréstamo.Items.AddRange(new object[] { "Personal Regular", "Personal Rápido", "Reparación y ampliación de vivienda", "Compra de Lote", "Compra de Vehículo Nuevo" });
             comboBox_TipoPréstamo.Location = new Point(147, 108);
             comboBox_TipoPréstamo.Name = "comboBox_TipoPréstamo";
-            comboBox_TipoPréstamo.Size = new Size(181, 23);
+            comboBox_TipoPréstamo.Size = new Size(209, 23);
             comboBox_TipoPréstamo.TabIndex = 12;
             // 
             // comboBox_PlazoMeses
