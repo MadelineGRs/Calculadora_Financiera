@@ -105,6 +105,7 @@
             button_Realizar.TabIndex = 6;
             button_Realizar.Text = "Realizar";
             button_Realizar.UseVisualStyleBackColor = true;
+            button_Realizar.Click += button_Realizar_Click;
             // 
             // Form1
             // 
