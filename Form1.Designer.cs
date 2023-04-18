@@ -85,6 +85,7 @@
             comboBox_TipoCliente.Name = "comboBox_TipoCliente";
             comboBox_TipoCliente.Size = new Size(118, 28);
             comboBox_TipoCliente.TabIndex = 4;
+            comboBox_TipoCliente.SelectedIndexChanged += comboBox_TipoCliente_SelectedIndexChanged;
             // 
             // label_PreguntaIniciar
             // 

@@ -45,6 +45,7 @@
             textBox_MontoSolicitar = new TextBox();
             label11 = new Label();
             button_Calcular = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label_TextoInicio
@@ -134,6 +135,7 @@
             label_MontoT.Size = new Size(50, 20);
             label_MontoT.TabIndex = 8;
             label_MontoT.Text = "label9";
+            label_MontoT.Click += label_MontoT_Click;
             // 
             // label_CuotaMensual
             // 
@@ -144,6 +146,7 @@
             label_CuotaMensual.Size = new Size(58, 20);
             label_CuotaMensual.TabIndex = 9;
             label_CuotaMensual.Text = "label10";
+            label_CuotaMensual.Click += label_CuotaMensual_Click;
             // 
             // button_EnviarSolicitd
             // 
@@ -164,6 +167,7 @@
             button_Atrás.TabIndex = 11;
             button_Atrás.Text = "Atrás";
             button_Atrás.UseVisualStyleBackColor = true;
+            button_Atrás.Click += button_Atrás_Click;
             // 
             // comboBox_TipoPréstamo
             // 
@@ -173,6 +177,7 @@
             comboBox_TipoPréstamo.Name = "comboBox_TipoPréstamo";
             comboBox_TipoPréstamo.Size = new Size(209, 23);
             comboBox_TipoPréstamo.TabIndex = 12;
+            comboBox_TipoPréstamo.SelectedIndexChanged += comboBox_TipoPréstamo_SelectedIndexChanged;
             // 
             // comboBox_PlazoMeses
             // 
@@ -210,12 +215,25 @@
             button_Calcular.TabIndex = 16;
             button_Calcular.Text = "Calcular";
             button_Calcular.UseVisualStyleBackColor = false;
+            button_Calcular.Click += button_Calcular_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(343, 365);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 51);
+            button1.TabIndex = 17;
+            button1.Text = "Salir";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(button_Calcular);
             Controls.Add(label11);
             Controls.Add(textBox_MontoSolicitar);
@@ -258,5 +276,6 @@
         private TextBox textBox_MontoSolicitar;
         private Label label11;
         private Button button_Calcular;
+        private Button button1;
     }
 }
